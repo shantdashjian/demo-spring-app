@@ -21,7 +21,7 @@ class HelloControllerTest {
 
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello, World!")));
+                .andExpect(content().string(containsString("Hello, World! I am here.")));
     }
 
 }
